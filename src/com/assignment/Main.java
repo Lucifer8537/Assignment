@@ -2,10 +2,7 @@ package com.assignment;
 
 public class Main {
 	public int Add(String numbers) {
-		if(numbers.length() == 1) {
-			return Integer.parseInt(numbers);
-		}
-		if(numbers.length() > 1) {
+		if(numbers.length() > 0) {
 			String[] numberArr = numbers.split(",");
 			int sum = 0;
 			for(int i = 0; i < numberArr.length; i++) sum += Integer.parseInt(numberArr[i]); 
