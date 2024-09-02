@@ -10,6 +10,7 @@ class MainTest {
 	void test() {
 		Main m = new Main();
 		assertEquals(0, m.Add(""));
+		assertEquals(1, m.Add("1"));
 	}
 
 }
