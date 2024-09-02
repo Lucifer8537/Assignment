@@ -21,6 +21,9 @@ class MainTest {
 		assertEquals(9, m.Add("9"));
 		assertEquals(10, m.Add("10"));
 		assertEquals(1, m.Add("0,1"));
+		assertEquals(3, m.Add("1,2"));
+		assertEquals(6, m.Add("1,2,3"));
+		assertEquals(8, m.Add("2,2,2,2"));
 	}
 
 }
