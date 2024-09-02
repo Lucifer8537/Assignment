@@ -5,7 +5,7 @@ public class Main {
 		if(numbers.length() > 0) {
 			String[] numberArr = numbers.split(",");
 			int sum = 0;
-			for(int i = 0; i < numberArr.length; i++) sum += Integer.parseInt(numberArr[i]); 
+			for(int i = 0; i < numberArr.length; i++) sum += Integer.parseInt(numberArr[i].trim()); 
 			return sum;
 		}
 		return 0;
