@@ -24,6 +24,7 @@ class MainTest {
 		assertEquals(3, m.Add("1,2"));
 		assertEquals(6, m.Add("1,2,3"));
 		assertEquals(8, m.Add("2,2,2,2"));
+		assertEquals(10, m.Add("1, 2, 3, 4"));
 	}
 
 }
