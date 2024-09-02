@@ -12,6 +12,14 @@ class MainTest {
 		assertEquals(0, m.Add(""));
 		assertEquals(1, m.Add("1"));
 		assertEquals(2, m.Add("2"));
+		assertEquals(3, m.Add("3"));
+		assertEquals(4, m.Add("4"));
+		assertEquals(5, m.Add("5"));
+		assertEquals(6, m.Add("6"));
+		assertEquals(7, m.Add("7"));
+		assertEquals(8, m.Add("8"));
+		assertEquals(9, m.Add("9"));
+		assertEquals(10, m.Add("10"));
 	}
 
 }
