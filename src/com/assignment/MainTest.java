@@ -20,6 +20,7 @@ class MainTest {
 		assertEquals(8, m.Add("8"));
 		assertEquals(9, m.Add("9"));
 		assertEquals(10, m.Add("10"));
+		assertEquals(1, m.Add("0,1"));
 	}
 
 }
