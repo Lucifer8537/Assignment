@@ -2,7 +2,9 @@ package com.assignment;
 
 public class Main {
 	public int Add(String numbers) {
-		if(numbers == "1") return 1;
+		if(numbers.length() > 0) {
+			return Integer.parseInt(numbers);
+		}
 		return 0;
 	}
 	public static void main(String[] args) {
