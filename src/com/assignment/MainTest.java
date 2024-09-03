@@ -29,6 +29,8 @@ class MainTest {
 		assertEquals(6, m.Add("1\n2,3"));
 		assertEquals(15,m.Add("1\n2,3,4\n5"));
 		assertEquals(3, m.Add("//;\n1;2"));
+		assertEquals(10, m.Add("//:\n1:2:3:4"));
+		assertEquals(10, m.Add("//:\n 1 : 2 : 3 : 4 "));
 	}
 
 }
