@@ -11,7 +11,15 @@ public class Main {
 			}
 			String[] numberArr = numbers.split("["+delimeter+"]");
 			long sum = 0;
-			for(int i = 0; i < numberArr.length; i++) sum += Long.parseLong(numberArr[i].trim());
+			String negative = "";
+			for(int i = 0; i < numberArr.length; i++) {
+				long num = Long.parseLong(numberArr[i].trim());
+				if(num < 0) negative += num + " ";
+				sum += num;
+			}
+			if(negative.length() > 0) {
+				throw new NegativeNumberException("negatives not allowed " + negative);
+			}
 			return sum;	
 		}
 		return 0;
@@ -22,3 +30,5 @@ public class Main {
 	}
 
 }
+
+

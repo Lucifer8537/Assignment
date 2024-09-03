@@ -3,12 +3,13 @@ package com.assignment;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 class MainTest {
-
+	Main m = new Main();
 	@Test
 	void test() {
-		Main m = new Main();
+		
 		assertEquals(0, m.Add(""));
 		assertEquals(1, m.Add("1"));
 		assertEquals(2, m.Add("2"));
@@ -31,6 +32,13 @@ class MainTest {
 		assertEquals(3, m.Add("//;\n1;2"));
 		assertEquals(10, m.Add("//:\n1:2:3:4"));
 		assertEquals(10, m.Add("//:\n 1 : 2 : 3 : 4 "));
+		assertThrows(NegativeNumberException.class, new Executable() {
+			@Override
+			public void execute() throws Throwable {
+				m.Add("-1,2,3");
+			}
+		});
 	}
+	
 
 }
